@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!-- Declares the model type for this view is 'Book' -->
+@model Book
+<div class="card shadow-sm m-3">
+    <div class="card-header bg-dark text-white">
+        <h4 class="mb-0">@Model.Title</h4>
+    </div>
+    <!-- Card body for book details -->
+    <div class="card-body">
+        <ul class="list-unstyled">
+            <li><strong>Author:</strong> @Model.Author</li>
+            <li><strong>Publisher:</strong> @Model.Publisher</li>
+            <li><strong>ISBN:</strong> @Model.Isbn</li>
+            <li><strong>Classification:</strong> @Model.Classification</li>
+            <li><strong>Category:</strong> @Model.Category</li>
+            <li><strong>Page Count:</strong> @Model.PageCount</li>
+            <li><strong>Price:</strong> $@Model.Price.ToString("0.00")</li>
+        </ul>
+    </div>
+</div>
